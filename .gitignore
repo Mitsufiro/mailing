@@ -1,4 +1,6 @@
 # created by virtualenv automatically
 .idea
 /lib/
+lib
+bin
 /bin/
