@@ -77,16 +77,16 @@
 
 • Клонируем репозиторий:
 
-    git clone https://github.com/Mitsufiro/fastapi_celery
+    git clone https://github.com/Mitsufiro/mailing
 
 • Разворачиваем контейнер:
 
     docker-compose up
 • Создаем миграцию:
 
-    docker exec fastapi_celery_web_1 alembic revision --autogenerate -m "New Migration"
+    docker exec mailing_web_1 alembic revision --autogenerate -m "New Migration"
 ____________________________
-    docker exec fastapi_celery_web_1 alembic upgrade head
+    docker exec mailing_web_1 alembic upgrade head
 
 • Создайте админ-пользователя:
 
@@ -99,6 +99,7 @@ ____________________________
 • Авторизуйтесь
 
 ![alt text](screens/auth_1.png)
+
 ![alt text](screens/auth_2.png)
 
 • Создайте клиентов введя номер телефона, произвольный тег и существующую почту чтобы убедиться что рассылка работает.
